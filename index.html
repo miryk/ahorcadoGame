@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El juego del ahorcado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bienvenidos al juego del Ahorcado</h1>
+    <p id="description">Adivina la palabra escondida!</p>
+    
+    <div class="page">
+      <div class="letters"></div>
+      <!-- Acá se generan las casillas -->
+      <div class="letters"></div>
+        <form id="input" autocomplete="off">
+          <input id ="input-field" type="text" maxlength="1" placeholder="Escriba la letra aquí: ">
+          <button id="submit" type="submit">Submit</button>
+        </form>  
+        <div class="details">
+          <p class="wrong-letter">Letras incorrectas: <span></span></p>
+          <p class="tries">Intentos restantes: <span></span></p>  
+        </div>
+    </div>
+    <button id="start">Iniciar</button>
+    <div id="win">
+      <p>You Win!</p>
+      <img src="./img/success.png" alt="win-icon">
+      <p class="message">Sigue jugando haciendo click en Iniciar</p>
+    </div>
+    <div id="lose">
+      <p>You Lost!</p>
+      <img src="./img/loser.png" alt="lost-icon">
+      <p class="message">Sigue jugando haciendo click en Iniciar</p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
